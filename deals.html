@@ -1,244 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <body>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-
-      <center><h1>Famous Foods</h1></center>
-      <style>
-        
-        nav {
-  background-color: white;
-  height: 100px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  float: left;
-}
-
-a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.image-container {
-            display: flex;
-        }
-        .container {
-      display: flex;
-      align-items: center;
-    }
-    .button-column {
-      flex: 1;
-    }
-    .ingredients-column {
-      flex: 2;
-      text-align: right;
-    }
-    .transition-image {
-      transition: transform 0.5s ease;
+<head>
+  <title>Fuel Prices</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
     }
 
-    /* CSS code for the hover effect */
-    .transition-image:hover {
-      transform: scale(1.1); /* Change the value to increase or decrease the scale */
+    h1 {
+      text-align: center;
+      color: #333333;
+      margin-top: 20px;
     }
-      .nug {
-        background: url(https://www.everydayfamilycooking.com/wp-content/uploads/2021/08/frozen-chicken-tenders-in-air-fryer4.jpg) no-repeat left center;
-        background-size: auto 150%;
-        color: black;
-        font-size: 35px;
-        padding-left: 100px;
-        border-radius: 50%;
-        width: 200px;
-        height: 300px;
-        
-      }
-      
-      .cris {
-        background: url(https://www.fromvalerieskitchen.com/wordpress/wp-content/uploads/2019/03/Freezer-Friendly-Beef-and-Bean-Burritos-051-500x500.jpg) no-repeat left center;
-        background-size: auto 150%;
-        color: black;
-        font-size: 35px;
-        padding-left: 100px;
-        border-radius: 50%;
-        width: 200px;
-        height: 300px;
-      }
-      .wedge {
-        background: url(https://40aprons.com/wp-content/uploads/2021/03/air-fryer-potato-wedges-6.jpg) no-repeat left center;
-        background-size: auto 150%;
-        color: black;
-        font-size: 35px;
-        padding-left: 100px;
-        border-radius: 50%;
-        width: 200px;
-        height: 300px;
-      }
-      .roll {
-        background: url(https://www.dinneratthezoo.com/wp-content/uploads/2018/01/homemade-egg-rolls-4.jpg) no-repeat left center;
-        background-size: auto 150%;
-        color: black;
-        font-size: 35px;
-        padding-left: 100px;
-        border-radius: 50%;
-        width: 200px;
-        height: 300px;
-  
-      }
-      .fish {
-        background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwGx-pRbIQli2u5OKMDcjSFcBHxl27Gv_D7M0-I6Yx2pnGVAuhfBR7QaU8cFeWnJBZq-g&usqp=CAU) no-repeat left center;
-        background-size: auto 150%;
-        color: black;
-        font-size: 35px;
-        padding-left: 100px;
-        border-radius: 50%;
-        width: 200px;
-        height: 300px;
-      
-      }
-      .taco {
-        background: url(https://www.deliciouslyseasoned.com/wp-content/uploads/2022/12/mini-chicken-tacos-19-550x825.jpg) no-repeat left center;
-        background-size: auto 150%;
-        color: black;
-        font-size: 35px;
-        padding-left: 100px;
-        border-radius: 50%;
-        width: 200px;
-        height: 300px;
-      }
-        .burger {
-          background: url(https://orangebrutus.com/wp-content/uploads/2016/07/Cheese-Burger-1.jpg) no-repeat left center;
-        background-size: auto 150%;
-        color: black;
-        font-size: 35px;
-        padding-left: 100px;
-        border-radius: 50%;
-        width: 200px;
-        height: 300px;
-        }
-        .somosa {
-          background: url(https://images.othoba.com/images/thumbs/0349759_chicken-somosa-60-gm-per-pc-for-sylhet-area.jpeg)no-repeat left center;
-          background-size: auto 150%;
-          color: black;
-          font-size: 35px;
-          padding-left: 100px;
-          border-radius: 50%;
-          width: 200px;
-          height: 300px;
-        }
-        @media (max-width: 768px) {
-            }
 
-@media (min-width: 769px) and (max-width: 992px) {
-  
-}
+    table {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border-collapse: collapse;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
 
-@media (min-width: 993px) {
-}
-      </style>
-      <nav>
-        <ul>
-          <li><a href="code.html" style="display: inline-block; padding: 1px; border: 0px solid #ccc;">
-            <img src="https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_50,q_50,fl_lossy,dpr_2.0,c_fit,f_auto,h_50/vfaagqec0o1kq43jifcr" width="100" height="100" alt="Button Image">
-          </a></li>
-          
-          <li><a href="menu.html" style="font-size:30px">Food</a></li>
-          <li><a href="stuff.html" style="font-size:30px">Drinks</a></li>
-          <li><a href="deals.html" style="font-size:30px">Deals</a></li>
-          <li><a href="rewards.html" style="font-size:30px">Nextstop Rewards</a></li>
-          <li><a href="https://www.google.com/maps/dir//Nextstop/@37.1138176,-93.5490284,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x87cf5cf4950fa7df:0x534b5f05320ce86e!2m2!1d-93.4789884!2d37.1138382" style="font-size:30px">Directions</a></li>
-          <li><a href="tel:417-647-2496" style="font-size:30px">Call Us</a></li>
-          <li><a href="https://food.google.com/chooseprovider?restaurantId=/g/1tflgry7&g2lbs=ADZRdkuY4PNx-pddOm-KwvL1GZAdmMDEWlnKE5t3pvJhlQwX_lDHJAQRQLdYj_aS-L4QVqVDFvN-MdrakZJtmJSzJyX8E8FcNGtWZAx7fhwmJxHVQNQHkIDWE94kA17nIuZpwtW2X4Qr&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search&gei=Ec0uZMDBEInM0PEPseWdUA&ei=Ec0uZMDBEInM0PEPseWdUA&fo_s=OA,AH&orderType=1" style="font-size:30px">Order Online</a></li>
-        </ul>
-      </nav>
-     <h1 style="color: transparent">l</h1>
-      
-      <div class="container">
-  <div class="button-column">
-    <p class="nug"><button style="font-size:20px;">Chicken Tenders</button></p>
-  </div>
-  <div class="ingredients-column" style="display: flex">
-    <p style="font-size:18px; margin-left: 350px">Ingredients: chicken, breadcrumbs, eggs, salt, pepper</p>
-  </div>
-</div>
-      <div class="container">
-  <div class="button-column" style="display: flex"> 
-    <p class="cris"><button style="font-size:18px">Beef And Bean Burrito</button></p>
-  </div>
-  <div class="ingredients-column" style="display: flex">
-    <p style="font-size:18px; margin-left: 350px">Ingredients: Beef, cheese, beans</p>
-  </div>
-</div>
-      <div class="container">
-  <div class="button-column" style="display: flex">
-    <p class="wedge"><button style="font-size:18px">Potato Wedges</button></p>
-  </div>
-  <div class="ingredients-column">
-    <p style="font-size:18px; margin-left: 350px">Ingredients: Potatos, seasoning</p>
-  </div>
-</div>
-      <div class="container">
-  <div class="button-column">
-    <p class="roll"><button style="font-size:18px">Egg roll</button></p>
-  </div>
-  <div class="ingredients-column">
-    <p style="font-size:18px; margin-left: 350px">Ingredients: cabbage, carrots, onions, and sometimes chopped roasted pork.</p>
-  </div>
-</div>
-      <div class="container">
-  <div class="button-column">
-    <p class="fish"><button style="font-size:18px">Fried Fish</button></p>
-  </div>
-  <div class="ingredients-column">
-    <p style="font-size:18px; margin-left: 350px">Ingredients: Fish, breadcrumbs, salt, pepper</p>
-  </div>
-</div>
-     <div class="container">
-  <div class="button-column">
-    <p class="taco"><button style="font-size:18px">Mini Tacos</button></p>
-  </div>
-  <div class="ingredients-column">
-    <p style="font-size:18px; margin-left: 350px">Ingredients: Mini taco shell, beef, pepper, salt</p>
-  </div>
-</div>
-      <div class="container">
-  <div class="button-column">
-    <p class="burger"><button style="font-size:18px">Cheese Burger</button></p>
-  </div>
-  <div class="ingredients-column">
-    <p style="font-size:18px; margin-left: 350px">Ingredients: Beef Patty, buns, melted American Cheese</p>
-    
-  </div>
-</div>
-<div class="container">
-  <div class="button-column">
-    <p class="somosa"><button style="font-size:18px">Samosa</button></p>
-  </div>
-  <div class="ingredients-column">
-    <p style="font-size:18px; margin-left: 350px">Ingredients: spiced potatoes, onions, and peas</p>
-    
-  </div>
-</div>
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #dddddd;
+    }
 
-<div>
-  <img class="transition-image" src="https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_50,q_50,fl_lossy,dpr_2.0,c_fit,f_auto,h_50/vfaagqec0o1kq43jifcr">
-</div>
-    
-   
-    </body>
-  </head>
-</html>  
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    .fuel-type {
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #777777;
+    }
+  </style>
+</head>
+<body>
+  <h1>Fuel Prices</h1>
+
+  <table>
+    <tr>
+      <th>Fuel Type</th>
+      <th>Price per Gallon</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td class="fuel-type">Regular Unleaded</td>
+      <td>$2.99</td>
+      <td class="description">Standard gasoline for most vehicles.</td>
+    </tr>
+    <tr>
+      <td class="fuel-type">Premium Unleaded</td>
+      <td>$3.49</td>
+      <td class="description">High-quality gasoline for high-performance vehicles.</td>
+    </tr>
+    <tr>
+      <td class="fuel-type">Diesel</td>
+      <td>$3.79</td>
+      <td class="description">Fuel for diesel-powered vehicles.</td>
+    </tr>
+  </table>
+</body>
+</html>
