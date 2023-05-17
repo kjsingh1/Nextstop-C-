@@ -1,224 +1,100 @@
 <!DOCTYPE html>
 <html>
-<body>
-  <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <title>Nextstop</title>
   <style>
-  
-    /* Default styles */
-    /* ... */
-    
-    /* Styles for small screens */
-    @media (max-width: 600px) {
-      /* ... */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
     
-    /* Styles for medium screens */
-    @media (min-width: 601px) and (max-width: 900px) {
-      /* ... */
+    header {
+      background-color: red;
+      color: yellow;
+      padding: 20px;
     }
     
-    /* Styles for large screens */
-    @media (min-width: 901px) {
-      /* ... */
+    h1 {
+      margin: 0;
     }
-  
-
-
-
-  nav {
-  background-color: white;
-  height: 100px;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  float: left;
-}
-
-a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-a:hover {
-  background-color: #ddd;
-  color: black;
-}
-.image-container {
-            display: flex;
-        }
-        .shop {
-          background-color: goldenrod;
-          height: 100px;
-        }
-        .item {
-  display: none; 
-}
-.item {
-  overflow: auto; 
-}
-
-.item img {
-  float: left; 
-  margin-right: 10px; 
-}
-
-.item .text {
-  margin-left: 10px; 
-}
-
-
-.bordered-text {
-  border: 1px solid black;
-  padding: 10px;
-  display: inline-block; 
-  margin: 5px; 
-}
-@media only screen and (max-width: 480px){
-  }
-</style>
+    
+    nav {
+      background-color: #555;
+      color: #fff;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+    }
+    
+    section {
+      padding: 20px;
+    }
+    
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .image-container {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      transition: transform 0.5s;
+    }
+    
+    .image-container:hover img {
+      transform: scale(1.2);
+    }
+  </style>
 </head>
-
-<center><h1 style="font-size: 35px; color: red;">Nextstop</h1></center>
-
-
-             <center style= "font-size:24px; color: goldenrod;"><h2>MAKE US YOUR NEXTSTOP</h2></center>
-             <div style="display: flex;">
-             <h1 style= "font-size:50px;color:red; margin-right: 700px"><b>$2.99/Regular</b></h1>
-             <h1 style= "font-size:50px;color:green; margin-left: 100px"><b>$3.49/Diesel</b></h1>
-             </div>
-             <nav>
-  <ul>
-    <li><a href="code.html" style="display: inline-block; padding: 1px; border: 0px solid #ccc;">
-      <img src="https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_50,q_50,fl_lossy,dpr_2.0,c_fit,f_auto,h_50/vfaagqec0o1kq43jifcr" width="100" height="100" alt="Button Image">
-    </a></li>
-    
-    <li><a href="menu.html" style="font-size:30px">Food</a></li>
-    <li><a href="stuff.html" style="font-size:30px">Drinks</a></li>
-    <li><a href="deals.html" style="font-size:30px">Deals</a></li>
-    <li><a href="rewards.html" style="font-size:30px">Nextstop Rewards</a></li>
-    <li><a href="https://www.google.com/maps/dir//Nextstop/@37.1138176,-93.5490284,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x87cf5cf4950fa7df:0x534b5f05320ce86e!2m2!1d-93.4789884!2d37.1138382" style="font-size:30px">Directions</a></li>
-    <li><a href="tel:417-647-2496" style="font-size:30px">Call Us</a></li>
-    <li><a href="https://food.google.com/chooseprovider?restaurantId=/g/1tflgry7&g2lbs=ADZRdkuY4PNx-pddOm-KwvL1GZAdmMDEWlnKE5t3pvJhlQwX_lDHJAQRQLdYj_aS-L4QVqVDFvN-MdrakZJtmJSzJyX8E8FcNGtWZAx7fhwmJxHVQNQHkIDWE94kA17nIuZpwtW2X4Qr&hl=en-US&gl=us&cs=1&ssta=1&fo_m=MfohQo559jFvMWvkddHzV46uMT_RFPQ05bfKMQVr5-7IofUJMU_hT8vrWuwRMUv3d8yCO4PgMUOzJVpjPL1YMfZ3bInYwBDuMfaXTPp5KXh-&utm_source=search&gei=Ec0uZMDBEInM0PEPseWdUA&ei=Ec0uZMDBEInM0PEPseWdUA&fo_s=OA,AH&orderType=1" style="font-size:30px">Order Online</a></li>
-    <li><a href="mailto:168nextstop@gmail.com" style="font-size:40px;">✉</a></li>
-  </ul>
-</nav>
-  <h1 style="color:transparent">l</h1>
+<body>
+  <header>
+    <h1>Nextstop</h1>
+  </header>
   
- 
-
-            <div class="image-container">
-              <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indiantext(1).png"width="2000px">
-              <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indian-fotor-bg-remover-20230505203254.png"width="2000px">
-            </div>
-            <div class="image-container" style="display: flex;">
-              <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/c(2).png"width="2000px">
-              <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/Cartize.png"width="2000px">
-            </div>
-
-<nav class="shop">
-  <ul>
-  <li style="font-size:50px; font-family: Arial"><b>About Us</b></li></center>
-  </ul>
-</nav>
-<table>
-  <tr>
-    <td>
-      <img src="https://speedy.uenicdn.com/21c2d4f8-1122-4d1d-afc0-ae0c015b06b0/c1240_800a/image/upload/v1680032286/business/f812aeac5ca84d439e4bad61e04873a5.jpg" width="700px" style="margin-right: 10px;">
-    </td>
-    <td>
-      <h2 style="font-family: Arial;">Best Convenience Store & Gas Station in Republic</h2>
-      <blockquote>When it comes to convenience stores and gas stations, Next-Stop is a standout option for locals and travelers alike. Located on 168 U.S. Highway 60 West in Republic, Missouri, this store offers everything you need and more. At Next-Stop, you'll find a wide selection of products, including 16oz Gosht energy</blockquote>
-     
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <h2 style="font-family: Arial;">Save Money with Our Competitive Prices at Next-Stop</h2>
-      <blockquote>Are you tired of overpaying for convenience store products? Look no further than Next-Stop in Republic, Missouri. This store is committed to providing the most competitive prices on all of its products, including beer, snacks, e-cigarettes, and beef jerky.</blockquote>
-    </td>
-    <td>
-      <img src="https://lh3.googleusercontent.com/p/AF1QipPivcCgmKT7j_1eE7h-KjZzH1gM1o_DffIlgsoL=s1280-p-no-v1" width="700px" style="margin-right: 10px;">
-    </td>
-  </tr>
-  </table>
-  <div id="content">
-    <div class="item">
-      <img src="https://speedy.uenicdn.com/21c2d4f8-1122-4d1d-afc0-ae0c015b06b0/c1240_800a/image/upload/v1679718917/business/21c2d4f8-1122-4d1d-afc0-ae0c015b06b0/imagejpg.jpg" width="700px">
-      <div class="text">
-        <blockquote>If you're looking for a convenience store with a wide selection of products, look no further than Next-Stop in Republic, Missouri. This store offers everything you need and more, from snacks and e-cigarettes to beer and beef jerky.</blockquote>
-      </div>
+  <nav>
+    <ul>
+      <li><a href="code.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="stuff.html">Beverages</a></li>
+      <li><a href="deals.html">Fuel Prices</a></li>
+      <li><a href="tel:417">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <section>
+    <h2>Welcome to Nextstop</h2>
+    <div class="image-container" style="display: flex;">
+    <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indiantext(1).png" alt="Gas Station Image" width: 100%; height:auto>
+    <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indian-fotor-bg-remover-20230505203254.png" alt="Gas Station Image" style="max-width: 100%; height: auto">
     </div>
-  </div>
+    <p></p>
+  </section>
   
-  
-  <button id="loadMoreBtn" onclick="loadMore()" style="font-size:20px; background-color: red; color: yellow; border-radius: 100%; height: 50px;">Load More</button>
-  
-   
-  <script>function loadMore() {
-    var items = document.getElementsByClassName("item");
-    for (var i = 0; i < items.length; i++) {
-      items[i].style.display = "block"; 
-    }
-    document.getElementById("loadMoreBtn").style.display = "none"; 
-  }
-  </script>
-
-<nav class="shop">
-  <ul>
-  <li style="font-size:50px; font-family: Arial"><b>Open 24/7</b></li></center>
-  </ul>
-</nav><br>
-<div class="bordered-container">
-  <span class="bordered-text" style="font-family: Arial; color: goldenrod; font-size: 20px; border-radius: 50%; margin-left: 100px;">
-    24/7 availability
-  </span>
-  <span class="bordered-text" style="font-family: Arial; color: goldenrod; font-size: 20px; border-radius: 50%; margin-left: 200px;">
-    Best Quality Gas
-  </span>
-  <span class="bordered-text" style="font-family: Arial; color: goldenrod; font-size: 20px; border-radius: 50%; margin-left: 200px;">
-    Wide Selection of Products
-  </span><br><br>
-  <span class="bordered-text" style="font-family: Arial; color: goldenrod; font-size: 20px; border-radius: 50%; margin-left: 50px;">
-    Quick Meals and Snacks
-  </span>
-  <span class="bordered-text" style="font-family: Arial; color: goldenrod; font-size: 20px; border-radius: 50%; margin-left: 180px;">
-    24-Hour Service
-  </span>
-  <span class="bordered-text" style="font-family: Arial; color: goldenrod; font-size: 20px; border-radius: 50%; margin-left: 100px;">
-    Energy Boost with Bang Bang Energy Drinks
-  </span><br><br>
-  <span class="bordered-text" style="font-family: Arial; color: goldenrod; font-size: 20px; border-radius: 50%; margin-left: 0px;">
-    Meal Deal for $5 with Three Hot Food Items
-  </span>
-  <span class="bordered-text" style="font-family: Arial; color: goldenrod; font-size: 20px; border-radius: 50%; margin-left: 50px;">
-    Competitive Prices
-  </span>
-  <span class="bordered-text" style="font-family: Arial; color: goldenrod; font-size: 20px; border-radius: 50%; margin-left: 230px;">
-    Quality Products
-  </span>
-</div>
-
-
-
-
-
-
-
-
-
-
-
+  <footer>
+    &copy; 2023 Your Gas Station. All rights reserved.
+  </footer>
 </body>
-
-
 </html>
