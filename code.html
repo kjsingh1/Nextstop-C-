@@ -2,6 +2,8 @@
 <html>
 <head>
   <title>Nextstop</title>
+</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -34,12 +36,17 @@
     nav ul li {
       display: inline;
       margin-right: 10px;
+      
     }
     
     nav ul li a {
       color: #fff;
       text-decoration: none;
       padding: 5px;
+      
+    }
+    .nav-list li {
+      flex-grow: 1;
     }
     
     section {
@@ -59,23 +66,64 @@
     }
     
     .image-container img {
-      width: 100%;
-      height: auto;
+      
       transition: transform 0.5s;
+      width: 100%;
     }
     
     .image-container:hover img {
       transform: scale(1.2);
     }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: yellow;
+      margin-top: 20px;
+    }
+
+    table {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      border-collapse: collapse;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    .fuel-type {
+      font-weight: bold;
+    }
+
+    .description {
+      font-size: 14px;
+      color: #777777;
+    }
+   
   </style>
-</head>
-<body>
+
   <header>
     <h1>Nextstop</h1>
   </header>
   
   <nav>
-    <ul>
+    <ul class="nav-list">
       <li><a href="code.html">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="stuff.html">Beverages</a></li>
@@ -87,12 +135,58 @@
   <section>
     <h2>Welcome to Nextstop</h2>
     <div class="image-container" style="display: flex;">
-    <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indiantext(1).png" alt="Gas Station Image" width: 100%; height:auto>
-    <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indian-fotor-bg-remover-20230505203254.png" alt="Gas Station Image" style="max-width: 100%; height: auto">
+    <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indiantext(1).png" alt="Gas Station Image">
+    <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indian-fotor-bg-remover-20230505203254.png" alt="Gas Station Image" >
     </div>
     <p></p>
   </section>
+  <header>
+    <h1>Fuel Prices</h1>
+  </header>
+
+  <table>
+    <tr>
+      <th>Fuel Type</th>
+      <th>Price per Gallon</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td class="fuel-type">Regular Unleaded</td>
+      <td>$2.99</td>
+      <td class="description">Standard gasoline for most vehicles.</td>
+    </tr>
+    <tr>
+      <td class="fuel-type">Diesel</td>
+      <td>$3.40</td>
+      <td class="description">Fuel for diesel-powered vehicles.</td>
+    </tr>
+  </table>
+  <header><h1>About our company</h1></header>
+<table>
   
+  <tr>
+    <td>
+      <img src="https://speedy.uenicdn.com/21c2d4f8-1122-4d1d-afc0-ae0c015b06b0/c1240_800a/image/upload/v1680032286/business/f812aeac5ca84d439e4bad61e04873a5.jpg" width="700px" style="margin-right: 10px;">
+    </td>
+    <td>
+      <h2 style="color:black">Best Convenience Store & Gas Station in Republic</h2>
+      <blockquote> it comes to convenience stores and gas stations, Next-Stop is a standout option for locals and travelers alike. Located on 168 U.S. Highway 60 West in Republic, Missouri, this store offers everything you need and more.</blockquote>
+    </td>
+    
+  </tr>
+  <tr>
+      <td>
+      <h1 style="color: black">Save Money with Our Competitive Prices at Next-Stop</h1>
+      <blockquote style="font-family: Arial;">Are you tired of overpaying for convenience store products? Look no further than Next-Stop in Republic, Missouri. This store is committed to providing the most competitive prices on all of its products, including beer, snacks, e-cigarettes, and beef jerky.</blockquote>
+      </td>
+    <td>
+      <img src="https://speedy.uenicdn.com/21c2d4f8-1122-4d1d-afc0-ae0c015b06b0/c1240_800a/image/upload/v1680032286/business/0dd191aaea6b4c6ea75dc3fa835d59fe.jpg" width="700px"style="margin-right: 10px;">
+    </td>
+  
+  </tr>
+    
+</table>
+
   <footer>
     &copy; 2023 Your Gas Station. All rights reserved.
   </footer>
