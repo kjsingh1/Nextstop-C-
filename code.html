@@ -63,12 +63,38 @@
     .image-container {
       position: relative;
       overflow: hidden;
+      animation: fadeIn 1s ease-out;
+      display: flex;
+    }
+    .fade-in-image {
+      opacity: 0;
+      animation: fadeIn 1s ease-out;
+      animation-fill-mode: forwards;
+      display: flex;
+    }
+    .hidden {
+      opacity: 0;
+      transition: opacity 0.5s;
+    }
+   
+.fadeIn {
+  opacity: 1;
+}
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
     
     .image-container img {
-      
       transition: transform 0.5s;
       width: 100%;
+      height: auto;
+      object-fit: scale-down;
+      display: flex;
     }
     
     .image-container:hover img {
@@ -135,10 +161,11 @@
   <section>
     <h2>Welcome to Nextstop</h2>
     <div class="image-container" style="display: flex;">
-    <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indiantext(1).png" alt="Gas Station Image">
-    <img src="https://raw.githubusercontent.com/kjsingh1/QR-code/main/indian-fotor-bg-remover-20230505203254.png" alt="Gas Station Image" >
+    <img src="https://github.com/kjsingh1/QR-code/blob/main/fotor_2023-5-22_13_46_16.png?raw=true" alt="Gas Station Image" class="fade-in-image">
+    <img src="https://github.com/kjsingh1/QR-code/blob/main/butter-fotor-bg-remover-20230522132746.png?raw=true" alt="Gas Station Image" class="fade-in-image">
+    
     </div>
-    <p></p>
+    
   </section>
   <header>
     <h1>Fuel Prices</h1>
@@ -166,7 +193,9 @@
   
   <tr>
     <td>
-      <img src="https://speedy.uenicdn.com/21c2d4f8-1122-4d1d-afc0-ae0c015b06b0/c1240_800a/image/upload/v1680032286/business/f812aeac5ca84d439e4bad61e04873a5.jpg" width="700px" style="margin-right: 10px;">
+      <div id="container">
+        <img src="https://speedy.uenicdn.com/21c2d4f8-1122-4d1d-afc0-ae0c015b06b0/c1240_800a/image/upload/v1680032286/business/f812aeac5ca84d439e4bad61e04873a5.jpg" width="700px" style="margin-right: 10px;" class="hidden">
+      </div>
     </td>
     <td>
       <h2 style="color:black">Best Convenience Store & Gas Station in Republic</h2>
@@ -180,15 +209,39 @@
       <blockquote style="font-family: Arial;">Are you tired of overpaying for convenience store products? Look no further than Next-Stop in Republic, Missouri. This store is committed to providing the most competitive prices on all of its products, including beer, snacks, e-cigarettes, and beef jerky.</blockquote>
       </td>
     <td>
-      <img src="https://speedy.uenicdn.com/21c2d4f8-1122-4d1d-afc0-ae0c015b06b0/c1240_800a/image/upload/v1680032286/business/0dd191aaea6b4c6ea75dc3fa835d59fe.jpg" width="700px"style="margin-right: 10px;">
+      <div id="container">
+      <img src="https://speedy.uenicdn.com/21c2d4f8-1122-4d1d-afc0-ae0c015b06b0/c1240_800a/image/upload/v1680032286/business/0dd191aaea6b4c6ea75dc3fa835d59fe.jpg" width="700px"style="margin-right: 10px;" class="hidden">
+      </div>
     </td>
   
   </tr>
     
 </table>
+<script>
+  window.addEventListener('scroll', function() {
+const images = document.querySelectorAll('#container img');
+
+images.forEach(function(image) {
+  if (isElementInViewport(image)) {
+    image.classList.add('fadeIn');
+  }
+});
+});
+
+function isElementInViewport(element) {
+var rect = element.getBoundingClientRect();
+return (
+  rect.top >= 0 &&
+  rect.left >= 0 &&
+  rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+);
+}
+
+</script>
 
   <footer>
-    &copy; 2023 Your Gas Station. All rights reserved.
+    &copy; 2023 Nextstop. All rights reserved.
   </footer>
 </body>
 </html>
