@@ -29,6 +29,17 @@
       align-items: center;
       padding: 20px;
       border-bottom: 1px solid #dddddd;
+      opacity: 0;
+      animation: fadeIn 1s ease-out;
+      animation-fill-mode: forwards;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
 
     .menu-item img {
@@ -60,11 +71,48 @@
       color: #008000;
       margin-top: 10px;
     }
+    nav {
+      background-color: #555;
+      color: #fff;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    nav ul li {
+      display: inline;
+      margin-right: 10px;
+      
+    }
+
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px;
+      
+    }
+    .nav-list li {
+      flex-grow: 1;
+    }
   </style>
 </head>
 <body>
-  <h1>Nextstop Menu</h1>
 
+  <h1>Nextstop Menu</h1>
+ <nav>
+    <ul class="nav-list">
+      <li><a href="code.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="stuff.html">Beverages</a></li>
+      <li><a href="deals.html">Fuel Prices</a></li>
+      <li><a href="tel:417">Contact</a></li>
+    </ul>
+  </nav>
   <div class="menu">
     <div class="menu-item">
       <img src="https://www.everydayfamilycooking.com/wp-content/uploads/2021/08/frozen-chicken-tenders-in-air-fryer4.jpg" alt="Burger">
