@@ -51,12 +51,7 @@
     .nav-list li {
       flex-grow: 1;
     }
-    .slideshow-container {
-    max-width: 1000px;
-    height: 700px;
-    position: relative;
-    margin: auto;
-    }
+   
 
     .slideshow-container-2{
     position: relative;
@@ -65,12 +60,38 @@
     overflow: hidden;
     }
 
-    .slide{
-      position: absolute;
-      width: 100%;
-      height: 700px;
-      transition: left 1s ease-in-out;
-    }
+    .slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  transition: left 1s ease-in-out;
+}
+
+.img-one {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeIn 1s ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
     .slide2 {
     position: absolute;
@@ -82,10 +103,7 @@
       animation-name: fade;
       animation-duration: 2s;
     }
-    @keyframes fade {
-      from {opacity: .5}
-      to {opacity: 1}
-    }
+    
     section {
       padding: 20px;
     }
@@ -501,41 +519,18 @@ return (
 );
 }
   
-    var slides = document.querySelectorAll('.slide');
-    var currentSlide = 0;
-    
-    let index = 0;
-    displayImages();
-    function displayImages() {
-      let i;
-      const images = document.getElementsByClassName("slide");
-      for (i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-      }
-      index++;
-      if (index > images.length) {
-        index = 1;
-      }
-      images[index-1].style.display = "block";
-      setTimeout(displayImages, 2000); 
-    }
+     const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
 
-    //second slideshow
-    let index2 = 0;
-    displayImages2();
-    function displayImages2() {
-      let i;
-      const images = document.getElementsByClassName("slide2");
-      for (i = 0; i < images.length; i++) {
-        images[i].style.display = "none";
-      }
-      index++;
-      if (index > images.length) {
-        index = 1;
-      }
-      images[index-1].style.display = "block";
-      setTimeout(displayImages2, 2000); 
-    }
+function showSlide(n) {
+  slides[currentSlide].style.left = '100%'; // Move the current slide out
+  currentSlide = (n + slides.length) % slides.length;
+  slides[currentSlide].style.left = '0'; // Move the next slide in
+}
+
+showSlide(0);
+
+setInterval(() => showSlide(currentSlide + 1), 3000);
 
 </script>
 
