@@ -4,7 +4,7 @@
   <title>Nextstop Menu</title>
   <link rel="icon" href="https://raw.githubusercontent.com/kjsingh1/QR-code/main/Nextstop.ico" type="image/x-icon">
   <style>
-    body {
+   body {
       font-family: Arial, sans-serif;
       background-color: red;
       margin: 0;
@@ -34,6 +34,7 @@
       animation: fadeIn 1s ease-out;
       animation-fill-mode: forwards;
     }
+    
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -72,6 +73,7 @@
       color: #008000;
       margin-top: 10px;
     }
+    
     nav {
       background-color: #555;
       color: #fff;
@@ -87,18 +89,46 @@
     nav ul li {
       display: inline;
       margin-right: 10px;
-      
     }
-
     
     nav ul li a {
       color: #fff;
       text-decoration: none;
       padding: 5px;
-      
     }
+    
     .nav-list li {
       flex-grow: 1;
+    }
+    
+    /* Media Queries */
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      .menu-item {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .menu-item img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      
+      .menu-item-title {
+        font-size: 16px;
+      }
+
+      .menu-item-description {
+        font-size: 12px;
+      }
+
+      .menu-item-price {
+        font-size: 14px;
+        margin-top: 5px;
+      }
     }
   </style>
 </head>
