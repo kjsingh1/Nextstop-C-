@@ -217,11 +217,44 @@
     animation: fadeIn 1s ease-out;
     animation-fill-mode: forwards;
   }
+  .contact {
+    height: 500px;
+    background-color: gold;
+  }
+  .phone {
+  border: 1px solid gray;
+  font-size: 23px;
+  margin-top: 30px;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 20px;
+}
+.contact-p {
+  font-size: 30px;
+  font-weight: bold;
+  border: 4px solid red;
+ padding: 100px;
+ width: 23%;
+  height: 20%;
+  color: red;
+}
 
     @media screen and (min-width: 768px) {
   .twenty {
     -moz-column-count: 3;
     column-count: 3;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .contact-image {
+    width: 600px;
+    margin-left: 600px;
+    margin-top: -290px;
+  }
+  .contact-p {
+    width: 35%;
+    height: 35%;
+    padding: 30px;
   }
 }
 
@@ -302,6 +335,22 @@
     .image-container img {
       width: 100%;
     }
+  .contact-p {
+    padding: 10px;
+    width: 95%;
+    height: 30%;
+    color: red;
+  }
+  .contact {
+    height: 800px;
+  }
+  .phone {
+    font-size: 20px;
+
+  }
+  .contact-image {
+    width: 100%;
+  }
   }
    
   </style>
@@ -498,6 +547,23 @@
   <div class="twenty-four">Quality Products</div>
 </div>
   </ul>
+  <header>
+    <h1>Contact Us</h1>
+   
+  </header><br><br>
+  <header class="contact">
+    <tabel>
+      <tr>
+        <td>
+  <p class="contact-p">        Contact Us <br>
+     <a href="mailto:168nextstop@gmail.com"><button class="phone">168nextstop@gmail.com</button></a><br>
+     <a href="tel:(417) 647-2496" class="phone"><button class="phone">(417) 647-2496</button></a></p>
+         
+        </td>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3181.6339677362316!2d-93.48150612439386!3d37.113829672159426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87cf5c6078922003%3A0x7f02eeba944c352d!2sNEXT%20STOP%20%233!5e0!3m2!1sen!2sus!4v1688700054414!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="contact-image"></iframe>
+      </tr>
+      </tabel>
+  </header>
 <script>
   window.addEventListener('scroll', function() {
 const images = document.querySelectorAll('#container img');
